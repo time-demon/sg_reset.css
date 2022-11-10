@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +8,14 @@
 html {
   touch-action: none;
   touch-action: pan-y;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 body {
   background: #fff;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 a {
@@ -31,6 +36,33 @@ img {
 
 li {
   list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* 滚动条盒子 */
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: transparent;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c9c9ca;
+}
+
+/* 鼠标悬浮在滚动条上时 */
+::-webkit-scrollbar-thumb:hover {
+  background: #a2a2a3;
+}
+
+/* 鼠标点击拖动滚动条时 */
+::-webkit-scrollbar-thumb:active {
+  background: #a2a2a3;
 }
 
 .ib {
