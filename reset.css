@@ -38,12 +38,14 @@ li {
   list-style: none;
 }
 
+/* 滚动条盒子 */
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
+  background: transparent;
 }
 
-/* 滚动条盒子 */
+/* 滚动条轨道 */
 ::-webkit-scrollbar-track {
   border-radius: 8px;
   background: transparent;
